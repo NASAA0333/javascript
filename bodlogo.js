@@ -49,6 +49,7 @@
 //   i++;
 // }
 // console.log("niilber", sum);
+console.log("my-my-my-my-my");
 // console.log("1------------------------------------------");
 // let n = 5,
 //   gap = "";
@@ -73,77 +74,80 @@
 //     gap += " ";
 //   }
 // }
-let n = 5,
-  star = "";
-console.log("1 -----------------------------------------------------------");
-for (let i = 0; i < n; i++) {
-  for (let j = 0; j < n; j++) {
-    star += "* ";
-  }
-  console.log(star);
-  star = "";
-}
+// console.log(
+//   "copyin--------------------------------------------------------------------------------------------------------"
+// );
+// let n = 5,
+//   star = "";
+// console.log("1 -----------------------------------------------------------");
+// for (let i = 0; i < n; i++) {
+//   for (let j = 0; j < n; j++) {
+//     star += "* ";
+//   }
+//   console.log(star);
+//   star = "";
+// }
 
-console.log("2 -----------------------------------------------------------");
-for (let i = 1; i <= n; i++) {
-  for (let j = 0; j < i; j++) {
-    star += "* ";
-  }
-  console.log(star);
-  star = "";
-}
-console.log("3 -----------------------------------------------------------");
-for (let i = 1; i <= n; i++) {
-  for (let j = 0; j < n - i; j++) {
-    star += " ";
-  }
-  for (let j = 0; j < i; j++) {
-    star += "* ";
-  }
-  console.log(star);
-  star = "";
-}
-console.log("4 -----------------------------------------------------------");
-for (let i = 1; i <= n; i++) {
-  for (let j = 0; j < n - i; j++) {
-    star += " ";
-  }
-  for (let j = 0; j < i * 2 - 1; j++) {
-    if (j == 0 || j == i * 2 - 2 || (i == n && j % 2 == 0)) {
-      star += "*";
-    } else {
-      star += " ";
-    }
-  }
-  console.log(star);
-  star = "";
-}
-console.log("5 -----------------------------------------------------------");
-for (let i = 1; i <= n; i++) {
-  for (let j = 0; j < n - i; j++) {
-    star += " ";
-  }
-  for (let j = 0; j < i * 2 - 1; j++) {
-    if (j == 0 || j == i * 2 - 2) {
-      star += "*";
-    } else {
-      star += " ";
-    }
-  }
-  console.log(star);
-  star = "";
-}
-for (let i = n - 1; i >= 0; i--) {
-  for (let j = 0; j < n - i; j++) {
-    star += " ";
-  }
-  for (let j = 0; j < i * 2 - 1; j++) {
-    if (j == 0 || j == i * 2 - 2) {
-      star += "*";
-    } else {
-      star += " ";
-    }
-  }
-  console.log(star);
-  star = "";
-}
+// console.log("2 -----------------------------------------------------------");
+// for (let i = 1; i <= n; i++) {
+//   for (let j = 0; j < i; j++) {
+//     star += "* ";
+//   }
+//   console.log(star);
+//   star = "";
+// }
+// console.log("3 -----------------------------------------------------------");
+// for (let i = 1; i <= n; i++) {
+//   for (let j = 0; j < n - i; j++) {
+//     star += " ";
+//   }
+//   for (let j = 0; j < i; j++) {
+//     star += "* ";
+//   }
+//   console.log(star);
+//   star = "";
+// }
+// console.log("4 -----------------------------------------------------------");
+// for (let i = 1; i <= n; i++) {
+//   for (let j = 0; j < n - i; j++) {
+//     star += " ";
+//   }
+//   for (let j = 0; j < i * 2 - 1; j++) {
+//     if (j == 0 || j == i * 2 - 2 || (i == n && j % 2 == 0)) {
+//       star += "*";
+//     } else {
+//       star += " ";
+//     }
+//   }
+//   console.log(star);
+//   star = "";
+// }
+// console.log("5 -----------------------------------------------------------");
+// for (let i = 1; i <= n; i++) {
+//   for (let j = 0; j < n - i; j++) {
+//     star += " ";
+//   }
+//   for (let j = 0; j < i * 2 - 1; j++) {
+//     if (j == 0 || j == i * 2 - 2) {
+//       star += "*";
+//     } else {
+//       star += " ";
+//     }
+//   }
+//   console.log(star);
+//   star = "";
+// }
+// for (let i = n - 1; i >= 0; i--) {
+//   for (let j = 0; j < n - i; j++) {
+//     star += " ";
+//   }
+//   for (let j = 0; j < i * 2 - 1; j++) {
+//     if (j == 0 || j == i * 2 - 2) {
+//       star += "*";
+//     } else {
+//       star += " ";
+//     }
+//   }
+//   console.log(star);
+//   star = "";
+// }
