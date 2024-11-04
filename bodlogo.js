@@ -49,7 +49,7 @@
 //   i++;
 // }
 // console.log("niilber", sum);
-console.log("my-my-my-my-my");
+// console.log("my-my-my-my-my");
 // console.log("1------------------------------------------");
 // let n = 5,
 //   gap = "";
@@ -152,3 +152,4 @@ console.log("my-my-my-my-my");
 //   star = "";
 // }
 //01000100101010110101011010101100011010010101010010010101010100011101010010101
+// console.log("asd");
