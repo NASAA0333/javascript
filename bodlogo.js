@@ -153,3 +153,77 @@
 // }
 //01000100101010110101011010101100011010010101010010010101010100011101010010101
 // console.log("asd");
+// console.log(
+//   "10-4m------------------------------------------------------------------"
+// );
+// ---*
+// --*-*
+// -*-*-*
+// *-*-*-*
+// const n = 5;
+// let result = "";
+// for (a = 0; a < n; a++) {
+//   result = result + "* ";
+//   console.log(result);
+// }
+
+// let result = " ";
+// for (let i = 0; i < n; i++) {
+//   for (let q = 0; q < n - i - 1; q++) {
+//     result = result + " ";
+//   }
+//   for (let w = 0; w < i; w++) {
+//     result = result + "* ";
+//   }
+//   console.log(result);
+//   result = " ";
+// }
+// const n = 5;
+// for (let i = 0; i <= n; i++) {
+//   let row = " ".repeat(n - i) + "* ".repeat(i);
+//   console.log(row);
+// }
+// console.log("bodlogo4-----------------------");
+// let count = 0;
+// function calculateProblem(count) {
+//   console.log(count);
+//   function problemPerHour() {
+//     let i = 1,
+//       q = 2;
+//   }
+// }
+// calculateProblem(4);
+// problemPerHour();
+// console.log("bodlogo5-----------------------");
+// function printFavoriteFood(name, food) {
+//   console.log(name, " loves to eat ", food);
+// }
+// printFavoriteFood("Sara", "pizza");
+// console.log("bodlogo4-----------------------");
+// function printWeather(cityName, weather) {
+//   console.log(cityName, "хотод", weather, "˚C байна");
+// }
+// printWeather("Chicago", 32);
+// console.log("bodlogo5-----------------------");
+// function printBookDetails(title, auther, yearPublished) {
+//   console.log(title, auther, yearPublished);
+// }
+// printBookDetails("Harry Potter", "J.K.Rowling", 1997);
+// console.log("bodlogo6-----------------------");
+// function calculateArea(width, height) {
+//   const area = width * height;
+//   console.log("area: ", area);
+// }
+// calculateArea(10, 20);
+// console.log("bodlogo7-----------------------");
+// function calculateVolume(width, height, depth) {
+//   const Volume = width * height * depth;
+//   console.log("Volume", Volume);
+// }
+// calculateVolume(10, 20, 30);
+// console.log("bodlogo8-----------------------");
+// function prinTicketInfo(eventName, ticketPrice, discount) {
+//   console.log(eventName, ticketPrice, discount);
+// }
+// prinTicketInfo("Playtime", "300000MNT", "20%");
+// console.log("-----------Midium-level-----------");
