@@ -1,0 +1,21 @@
+.main {
+  background-color: rgb(20, 166, 189);
+}
+.header {
+  display: flex;
+  min-width: 240px;
+  align-items: center;
+  height: 42px;
+}
+.title {
+  color: white;
+  font-size: 18px;
+  display: flex;
+}
+.green-sircle {
+  width: 12px;
+  height: 12px;
+  background-color: green;
+  border-radius: 50%;
+  display: flex;
+}
