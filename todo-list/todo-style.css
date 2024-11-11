@@ -19,3 +19,9 @@
   border-radius: 50%;
   display: flex;
 }
+
+.todo-item {
+  background-color: greenyellow;
+  width: 100px;
+  height: 20px;
+}
