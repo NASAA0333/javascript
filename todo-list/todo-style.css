@@ -1,16 +1,50 @@
+* {
+  margin: 0;
+  background-color: rgba(26, 26, 26, 1);
+}
+.add-task-button {
+  color: white;
+  background-color: green;
+  border-radius: 4px;
+}
 .main {
-  background-color: rgb(20, 166, 189);
+  display: flex;
+  justify-content: center;
 }
 .header {
+  min-width: 1280px;
+  display: flex;
+  justify-content: end;
+  height: 44px;
+}
+.box-header {
   display: flex;
   min-width: 240px;
   align-items: center;
   height: 42px;
+  background-color: black;
 }
 .title {
   color: white;
   font-size: 18px;
   display: flex;
+  background-color: black;
+}
+.white-sircle {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  margin: 0 10px 0 10px;
+}
+.yellow-sircle {
+  width: 12px;
+  height: 12px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: flex;
+  margin: 0 10px 0 10px;
 }
 .green-sircle {
   width: 12px;
@@ -18,10 +52,68 @@
   background-color: green;
   border-radius: 50%;
   display: flex;
+  margin: 0 10px 0 10px;
 }
-
+.red-sircle {
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  margin: 0 10px 0 10px;
+}
+.boxs {
+  display: flex;
+}
 .todo-item {
-  background-color: greenyellow;
-  width: 100px;
-  height: 20px;
+  background-color: rgba(26, 26, 26, 1);
+  color: gray;
+  max-width: 40px;
+  height: 54px;
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  margin: 5px;
+  border-radius: 8px;
+}
+.all-black-box {
+  min-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+}
+.black-box {
+  width: 280px;
+  height: 672px;
+  background-color: black;
+  border-radius: 12px;
+  border: 1px gray solid;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  color: white;
+}
+/* .modal-open {
+  display: block;
+} */
+.modal-content {
+  margin: 100px auto;
+  width: 40%;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  padding: 12px;
+  flex-direction: column;
+  color: white;
+}
+.add-text {
+  color: white;
 }

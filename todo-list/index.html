@@ -3,17 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>todo</title>
     <link rel="stylesheet" href="todo-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="main">
-    <div class="header">
-      <div class="green-sircle"></div>
-      <h1 class="title">To do</h1>
-    </div>
-    <button onclick="addTodo()">Add to do</button>
+    <div>
+      <div class="header">
+        <button onclick="addTodo()" class="add-task-button">Add task</button>
+      </div>
+      <div class="boxs">
+        <div class="all-black-box">
+          <div class="black-box">
+            <div class="box-header">
+              <div class="white-sircle"></div>
+              <h1 class="title">To do</h1>
+            </div>
+            <div id="tasks" class="todos"></div>
+          </div>
 
-    <div id="tasks" class="todos"></div>
+          <div class="black-box">
+            <div class="box-header">
+              <div class="yellow-sircle"></div>
+              <h1 class="title">In progress</h1>
+            </div>
+            <div id="tasks" class="Inprogress"></div>
+          </div>
+
+          <div class="black-box">
+            <div class="box-header">
+              <div class="green-sircle"></div>
+              <h1 class="title">Done</h1>
+            </div>
+            <div id="tasks" class="Done"></div>
+          </div>
+
+          <div class="black-box">
+            <div class="box-header">
+              <div class="red-sircle"></div>
+              <h1 class="title">Blocked</h1>
+            </div>
+            <div id="tasks" class="Blocked"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <h2>Enter task</h2>
+        <input type="text" id="taskName" class="add-text" />
+        <button onclick="saveTodo()" class="add-task-button">Add task</button>
+      </div>
+    </div>
     <script src="Todo.js"></script>
   </body>
 </html>
