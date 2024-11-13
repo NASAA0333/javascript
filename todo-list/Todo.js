@@ -52,15 +52,20 @@ function countDone() {
   return count;
 }
 
+// function render
+
 // RUNNING APPLICATION
 
 function render() {
-  const todolist = document.querySelector("#tasks");
-  todolist.innerHTML = "";
-
-  console.log(todolist);
+  document.querySelector("#todos").innerHTML = "";
+  document.querySelector("#inprogress").innerHTML = "";
+  document.querySelector("#done").innerHTML = "";
+  document.querySelector("#blocked").innerHTML = "";
 
   for (let i = 0; i < todos.length; i++) {
+    const todolist = document.querySelector("#" + todos[i].status);
+
+    console.log(todolist);
     const item = todos[i];
 
     // create task item
@@ -69,6 +74,7 @@ function render() {
 
     //   create task name
     const titleEl = document.createElement("p");
+    titleEl.style.color = "#ffffff";
     titleEl.innerText = item.name;
 
     //   create edit button
@@ -87,22 +93,23 @@ function render() {
       deleteOne(i);
     };
 
-    todolist.appendChild(element);
     element.appendChild(titleEl);
     element.appendChild(btnEl);
     element.appendChild(btnDelete);
+
+    todolist.appendChild(element);
   }
 }
-
 function addTodo() {
   const modal = document.querySelector("#modal");
   modal.style.display = "block";
 }
 function saveTodo() {
   const inputValue = document.getElementById("taskName").value;
+  const statsuValue = document.getElementById("task-status").value;
   todos.push({
     name: inputValue,
-    status: "todo",
+    status: statsuValue,
   });
   const modal = document.querySelector("#modal");
   modal.style.display = "none";

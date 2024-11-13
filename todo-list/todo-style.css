@@ -1,15 +1,30 @@
 * {
   margin: 0;
-  background-color: rgba(26, 26, 26, 1);
 }
 .add-task-button {
   color: white;
   background-color: green;
   border-radius: 4px;
+  width: 109px;
+  height: 44px;
+  font-size: 16px;
+}
+.add-task-button-2 {
+  color: white;
+  background-color: green;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 290px;
+  height: 44px;
+  margin-top: 50px;
 }
 .main {
   display: flex;
   justify-content: center;
+  background-color: rgba(26, 26, 26, 1);
+}
+.main-inside {
+  margin-top: 52px;
 }
 .header {
   min-width: 1280px;
@@ -19,10 +34,12 @@
 }
 .box-header {
   display: flex;
-  min-width: 240px;
+  max-width: 240px;
   align-items: center;
   height: 42px;
   background-color: black;
+  margin-left: auto;
+  margin-right: auto;
 }
 .title {
   color: white;
@@ -62,24 +79,23 @@
   display: flex;
   margin: 0 10px 0 10px;
 }
-.boxs {
-  display: flex;
-}
 .todo-item {
   background-color: rgba(26, 26, 26, 1);
   color: gray;
-  max-width: 40px;
+  max-width: 240px;
   height: 54px;
   align-items: center;
   display: flex;
   gap: 8px;
-  margin: 5px;
+  margin: 10px auto;
   border-radius: 8px;
+  justify-content: space-between;
 }
 .all-black-box {
   min-width: 1280px;
   display: flex;
   justify-content: space-between;
+  margin: 24px auto auto auto;
 }
 .black-box {
   width: 280px;
@@ -95,7 +111,7 @@
   left: 0;
   bottom: 0;
   z-index: 3;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   display: none;
   color: white;
 }
@@ -104,7 +120,8 @@
 } */
 .modal-content {
   margin: 100px auto;
-  width: 40%;
+  width: 370px;
+  height: 376px;
   background-color: #1e1e1e;
   display: flex;
   justify-content: center;
@@ -116,4 +133,30 @@
 }
 .add-text {
   color: white;
+}
+/* .todos {
+  width: 240px;
+  height: 54px;
+  padding: 12px;
+  gap: 8px;
+  border-radius: 8px;
+  display: flex;
+} */
+select {
+  width: 296px;
+  height: 48px;
+  border-radius: 4px;
+  border: 1px grey solid;
+  margin-top: 20px;
+  background-color: rgba(26, 26, 26, 1);
+}
+input {
+  width: 290px;
+  height: 43px;
+  border-radius: 4px;
+  border: 1px grey solid;
+  margin-top: 20px;
+  background-color: rgba(26, 26, 26, 1);
+}
+option {
 }
