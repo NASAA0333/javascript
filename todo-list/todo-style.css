@@ -115,9 +115,6 @@
   display: none;
   color: white;
 }
-/* .modal-open {
-  display: block;
-} */
 .modal-content {
   margin: 100px auto;
   width: 370px;
@@ -134,14 +131,6 @@
 .add-text {
   color: white;
 }
-/* .todos {
-  width: 240px;
-  height: 54px;
-  padding: 12px;
-  gap: 8px;
-  border-radius: 8px;
-  display: flex;
-} */
 select {
   width: 296px;
   height: 48px;

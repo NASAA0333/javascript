@@ -52,10 +52,9 @@ function countDone() {
   return count;
 }
 
-// function render
-
 // RUNNING APPLICATION
 
+// function render
 function render() {
   document.querySelector("#todos").innerHTML = "";
   document.querySelector("#inprogress").innerHTML = "";
