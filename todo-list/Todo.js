@@ -61,10 +61,10 @@ function render() {
   document.querySelector("#done").innerHTML = "";
   document.querySelector("#blocked").innerHTML = "";
 
-  let todoCounter = 0;
-  let inProgressCounter = 0;
-  let doneCounter = 0;
-  let blockedCounter = 0;
+  // let todoCounter = 0;
+  // let inProgressCounter = 0;
+  // let doneCounter = 0;
+  // let blockedCounter = 0;
 
   for (let i = 0; i < todos.length; i++) {
     const todolist = document.querySelector("#" + todos[i].status);
@@ -72,15 +72,15 @@ function render() {
     console.log(todolist);
     const item = todos[i];
     // tooloh system
-    if (containerName === "todo") {
-      todoCounter++;
-    } else if (containerName === "inProgress") {
-      inProgressCounter++;
-    } else if (containerName === "done") {
-      doneCounter++;
-    } else if (containerName === "blocked") {
-      blockedCounter++;
-    }
+    // if (containerName === "todo") {
+    //   todoCounter++;
+    // } else if (containerName === "inProgress") {
+    //   inProgressCounter++;
+    // } else if (containerName === "done") {
+    //   doneCounter++;
+    // } else if (containerName === "blocked") {
+    //   blockedCounter++;
+    // }
 
     // create task item
     const element = document.createElement("div");
@@ -114,14 +114,14 @@ function render() {
 
     todolist.appendChild(element);
   }
-  document.getElementById("todoCounter").innerHTML =
-    '<span class="counter">' + todoCounter + "</span>";
-  document.getElementById("inProgressCounter").innerHTML =
-    '<span class="counter">' + inProgressCounter + "</span>";
-  document.getElementById("doneCounter").innerHTML =
-    '<span class="counter">' + doneCounter + "</span>";
-  document.getElementById("blockedCounter").innerHTML =
-    '<span class="counter">' + blockedCounter + "</span>";
+  // document.getElementById("todoCounter").innerHTML =
+  //   '<span class="counter">' + todoCounter + "</span>";
+  // document.getElementById("inProgressCounter").innerHTML =
+  //   '<span class="counter">' + inProgressCounter + "</span>";
+  // document.getElementById("doneCounter").innerHTML =
+  //   '<span class="counter">' + doneCounter + "</span>";
+  // document.getElementById("blockedCounter").innerHTML =
+  //   '<span class="counter">' + blockedCounter + "</span>";
 }
 function addTodo() {
   const modal = document.querySelector("#modal");
