@@ -24,7 +24,7 @@
           <div class="box-header">
             <div class="white-sircle"></div>
             <h1 class="title">To do</h1>
-            <div id="meter" class="meter">0</div>
+            <div id="todoCounter" class="meter"></div>
           </div>
           <div id="todos" class="todos"></div>
         </div>
@@ -33,7 +33,7 @@
           <div class="box-header">
             <div class="yellow-sircle"></div>
             <h1 class="title">In progress</h1>
-            <div id="meter" class="meter">0</div>
+            <div id="inProgressCounter" class="meter"></div>
           </div>
           <div id="inprogress" class="todos"></div>
         </div>
@@ -42,7 +42,7 @@
           <div class="box-header">
             <div class="green-sircle"></div>
             <h1 class="title">Done</h1>
-            <div id="meter" class="meter">0</div>
+            <div id="doneCounter" class="meter"></div>
           </div>
           <div id="done" class="todos"></div>
         </div>
@@ -51,7 +51,7 @@
           <div class="box-header">
             <div class="red-sircle"></div>
             <h1 class="title">Blocked</h1>
-            <div id="meter" class="meter">0</div>
+            <div id="blockedCounter" class="meter"></div>
           </div>
           <div id="blocked" class="todos"></div>
         </div>
@@ -75,92 +75,3 @@
     <script src="Todo.js"></script>
   </body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <link
-      rel="icon"
-      sizes="32x32"
-      href="stock-vector-project-task-management-and-effective-time-planning-tools-project-development-icon-d-vector-2046318389.jpg"
-    />
-    <title>Todo</title>
-  </head>
-  <body>
-    <section class="todo-container">
-      <a href="#" onclick="toggle()"
-        ><button class="add-task" id="add-task">Add task</button>
-      </a>
-      <div id="popup" class="popup">
-        <p>Enter task</p>
-        <input
-          type="text"
-          placeholder="Task name..."
-          id="myInput"
-          onchange="render()"
-        />
-        <label for="select">Choose your status :</label>
-        <select name="status" id="select">
-          <option value="todo">To do</option>
-          <option value="inProgress">In progress</option>
-          <option value="done">Done</option>
-          <option value="blocked">Blocked</option>
-        </select>
-        <a href="#" onclick="toggle()"
-          ><button onclick="addTask()">Submit</button></a
-        >
-      </div>
-      <div id="edit-task-pop-up" class="popup">
-        <p>Edit task</p>
-        <input type="text" placeholder="New task name..." id="editedInput" />
-        <label for="select">Choose your status :</label>
-        <select name="status" id="editedSelect">
-          <option value="todo">To do</option>
-          <option value="inProgress">In progress</option>
-          <option value="done">Done</option>
-          <option value="blocked">Blocked</option>
-        </select>
-        <button onclick="saveEdited()">Submit</button>
-      </div>
-      <main class="lists-section">
-        <div class="to-do" id="todo">
-          <div class="lists-title">
-            <span class="dot"></span>
-            <p>To do</p>
-            <span class="counter" id="todoCounter">0</span>
-          </div>
-          <div class="tasks" id="tasks-todo"></div>
-        </div>
-        <div class="inProgress" id="inProgress">
-          <div class="lists-title">
-            <span class="dot"></span>
-            <p>In progress</p>
-            <span class="counter" id="inProgressCounter">0</span>
-          </div>
-          <div class="tasks" id="tasks-inProgress"></div>
-        </div>
-        <div class="done" id="done">
-          <div class="lists-title">
-            <span class="dot"></span>
-            <p>Done</p>
-            <span class="counter" id="doneCounter">0</span>
-          </div>
-          <div class="tasks" id="tasks-done"></div>
-        </div>
-        <div class="blocked" id="blocked">
-          <div class="lists-title">
-            <span class="dot"></span>
-            <p>Blocked</p>
-            <span class="counter" id="blockedCounter">0</span>
-          </div>
-          <div class="tasks" id="tasks-blocked"></div>
-        </div>
-      </main>
-    </section>
-    <script src="index.js"></script>
-  </body>
-</html> -->
