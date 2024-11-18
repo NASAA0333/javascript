@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="snake.css" />
+  </head>
+  <body>
+    <div class="board">
+      <div class="snake"></div>
+    </div>
+    <div>
+      <button>up</button>
+      <button>down</button>
+      <button>left</button>
+      <button>right</button>
+    </div>
+    <script>
+      let headTop = 200;
+      let headLeft = 150;
+      let direction ="up"
+
+      const config = {
+        size: 20,
+        width :30,
+        heihgt:25
+      }
+
+      const snakeHtml = document.getElementById("board");
+
+      function goUp() {
+        headTop = headTop - 20;
+        render();
+      }
+
+      setInterval(gameLoop, 1000);
+
+      function gameLoop() {
+        switch(direction){
+          case "up";
+           goUp();
+           break;
+          case "right";
+
+
+        }
+
+      }
+
+      function render() {
+        const snakeHtml = "<div class=snake";
+      }
+    </script>
+  </body>
+</html>
